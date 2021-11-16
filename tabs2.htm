@@ -10,26 +10,22 @@
                 box-sizing: border-box;
             }
             body {
-                width: 100%;
-                margin: 10px;
+                width:100%;
+                margin: 5px 30px 5px 30px;
+                background-color:#EBE0D0;
             }
             .logo {
                 text-align: center;
                 text-transform: uppercase;
+                font-size: 30px;
+                color:dimgrey;
+                font-family: "Times New Roman", Times, serif;
             }
-            .table1 {
-                padding: 15px;
-                border-collapse: collapse;
-                width: 95%;
-                border: 1px solid red;
-                background-color: tomato;
-            } 
             .table2 {
                 margin: auto;
                 padding: 10px;
                 border-collapse: collapse;
                 width: 85%;
-                border: 1px solid red;
                 background-color: blue;
                 color: white;
             }
@@ -42,18 +38,33 @@
             .tablecell3 {
                 text-align: right;
                 padding: 10px;
+            }
+            .nav {
+                padding: 10px;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 50px;
+                color:dimgrey;
+                font-family: "Lucida Console", "Courier New", monospace; sans-serif;
+                font-weight: bold;
+            }
+            .table1 {
+                padding: 15px;
+                border-collapse: collapse;
+                width: 95%;
             } 
             .foto {
                 width: 100%;
-                height: 350px;
+                height: 250px;
                 border: 2px solid black;
             }
             .coupon {
                 width: 100%;
-                height: 350px;
+                height: 250px;
                 border: 2px dashed grey;
             }
             .antras {
+                border-collapse: collapse;
                 text-align: justify;
                 padding: 10px;
                 width: 35%;
@@ -65,6 +76,10 @@
                 width: 35%;
                 border: 1px solid black;
             }
+            .name {
+                color: red;
+                font-weight: bold;
+            }
     </style>
 </head>
 <body>
@@ -72,16 +87,16 @@
         <div class="logo">
             <h1>The daily news</h1>
         </div>
-        <div class="header">
-            Apie laikrasti
-        </div>
-        <tr class="nav">
+        <tr class="header">
             <table class="table2">
                 <td class="tablecell1">Schoolname.com</td>
                 <td class="tablecell2">The school's best news</td>
                 <td class="tablecell3">$ 1.00</td>
             </table> 
         </tr>
+        <div class="nav">
+            Your headline goes here
+        </div>
         <tr class="main">
             <table class="table1">
                 <td>
@@ -93,23 +108,28 @@
                     </table>  
                 </td>
                 <td class="antras">
-                   <p>Lorem ipsum loremp</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                   <p class="name">Lorem ipsum loremp</p>
+                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
                 </td>
                 <td class="trecias">
-                    <p>Lorem ipsum loremp</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                    <p class="name">Lorem ipsum loremp</p>
+                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                   
                 </td>
             </table>
         </tr>     
         </div>
-        <div class="footer">
-            copyright
-        </div>
+        <tr class="footer">
+            <td class="footer"><h5>Copyright &reg 2021 AB</h5></td>
+        </tr>
     </table>
 </body>
 </html>
