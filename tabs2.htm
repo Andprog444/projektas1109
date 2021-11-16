@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
+         * {
                 box-sizing: border-box;
             }
             body {
                 width:100%;
-                margin: 5px 30px 5px 30px;
+                margin: 5px 30px 50px 30px;
                 background-color:#EBE0D0;
             }
             .logo {
@@ -23,21 +23,33 @@
             }
             .table2 {
                 margin: auto;
-                padding: 10px;
+                padding: 20px;
                 border-collapse: collapse;
                 width: 85%;
                 background-color: blue;
                 color: white;
             }
             .tablecell1 {
-                padding: 10px;
+                padding-left: 20px;
+                width: 20%;
+                padding-top: 20px;
+                padding-bottom: 20px;
             } 
             .tablecell2 {
-                text-align: justify;
+                text-align:center;
+                text-transform: uppercase;
+                width: 60%;
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
             .tablecell3 {
                 text-align: right;
-                padding: 10px;
+                padding-right: 20px;
+                width: 20%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+
             }
             .nav {
                 padding: 10px;
@@ -49,36 +61,54 @@
                 font-weight: bold;
             }
             .table1 {
-                padding: 15px;
                 border-collapse: collapse;
                 width: 95%;
+                margin-left: 100px;
+            }
+            .td1 {
+                float: left;
+                width: 26%;
             } 
             .foto {
-                width: 100%;
-                height: 250px;
-                border: 2px solid black;
+                margin-left: 100px;
+                width: 300px;
+                height: 220px;
             }
             .coupon {
-                width: 100%;
-                height: 250px;
-                border: 2px dashed grey;
+                margin-left: 135px;
+                width: 300px;
+                height: 220px;
+                border: 5px dashed grey;
+                color: red;
+                text-align: center;
+                font-size: 30px;
+                padding: 10px;
             }
             .antras {
+                float: left;
                 border-collapse: collapse;
-                text-align: justify;
                 padding: 10px;
-                width: 35%;
-                border: 1px solid black;
+                width: 30%;
+                
             }
             .trecias {
-                text-align: justify;
+                float: left;
                 padding: 10px;
-                width: 35%;
-                border: 1px solid black;
+                width: 30%;      
             }
             .name {
                 color: red;
                 font-weight: bold;
+            }
+            .your-name {
+                font-weight: bold;
+                text-align: center;
+            }
+            .copy {
+                margin-left: 200px;
+                color:grey;
+                display: block;
+                width: 100%;
             }
     </style>
 </head>
@@ -99,11 +129,11 @@
         </div>
         <tr class="main">
             <table class="table1">
-                <td>
+                <td class="td1">
                     <table class="lentele">
                         <tr class="pirmas">
-                            <ol class="foto">foto</ol>
-                            <ol class="coupon">coupon</ol>
+                            <ol><img src="img1/black-head.jpg" class="foto" alt="Black human head"></ol>
+                            <ol class="coupon">- Coupon -</ol>
                         <tr>
                     </table>  
                 </td>
@@ -122,14 +152,13 @@
                    <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
                    <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
                    <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   
+                   <p class="your-name">By your name</p>
                 </td>
             </table>
         </tr>     
         </div>
-        <tr class="footer">
-            <td class="footer"><h5>Copyright &reg 2021 AB</h5></td>
-        </tr>
+       
     </table>
+    <footer class="copy"> Copyright &reg 2021 AB</footer>
 </body>
 </html>
