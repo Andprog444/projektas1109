@@ -5,8 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        padding-top: 15px;
+    }
+    td {
+        border: 2px solid black;
+    }
+    .logo {
+        width: auto;
+        background-color: lightgrey;
+        padding-left: 30px;
+        color: red;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: capitalize;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .logo1 {
+        width: 55%;
+        background-color:lightgrey;
+        font-weight: bold;
+        text-transform: capitalize;
+        color:rgba(10, 146, 192, 0.842);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 12px;
+    }
+    .table-nav {
+        background-color: lightgrey;
+    }
+    .table-header {
+        background-color: lightgrey;
+    }
+    .td1 {
+        color: white;
+        width: 50px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: red;
+        border-radius: 10px;
+        padding: 5px 25px 5px 25px;
+        font-size: 10px;
+    }    
+    .td2 {
+        color:rgba(10, 146, 192, 0.842);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: lightgrey;
+        padding: 0px 20px 0px 20px;
+        font-size: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }    
+    .td3 {
+        width: 80%;
+        color:rgba(10, 146, 192, 0.842);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: lightgrey;
+        /* padding: 0px 20px 0px 20px; */
+        font-size: 10px; 
+    }
+
+    .data {
+        border-radius: 10px;
+        /* background-color: red; */
+        text-align: center;
+        width: 7%;
+        border-collapse: collapse;
+    }
+    .prop {
+        background-color: red;
+        color: white;
+        width: 70%;
+        border-collapse: collapse;
+        margin-left: 15px;
+        border-radius: 5px 5px 0px 0px;
+    }
+</style>
 </head>
 <body>
-    <img src="img1/black-head.jpg" width="50px" alt="Black human head">
+    <table>
+        <tr>
+            <td>
+                <table class="table-header">
+                    <tr>
+                        <td class="logo">Most popular stories</td>
+                        <td class="logo1">what's this?</td>
+                        <td>
+                            <table class="table-nav">
+                                <td>
+                                    <table class="table-now">
+                                        <td class="td1">Now</td>
+                                    </table>
+                                </td>
+                                <td class="td2">today</td>
+                                <td class="td3">this week</td>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="td">
+                <table>
+                    <td class="data">
+                        <table>
+                            <p class="prop">prop it</p>
+                            <p class="number">11</p>
+                            <p class="drop">drop it</p>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <p>cspan</p>
+                                <p>pasted by</p>
+                                <p>today is</p>
+                            </tr>
+                            <tr>
+                                <td>more</td>
+                                <td>discuss</td>
+                                <td>read full</td>
+                            </tr>
+                        </table>
+                    </td>
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
