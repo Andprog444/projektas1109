@@ -12,6 +12,26 @@
     body {
         margin: 0;
     }
+    div.col-1 {
+        float: left;
+        width: 20%;
+    }
+    div.col-2 {
+        float: left;
+        width: 40%;
+    }
+    div.col-3 {
+        float: left;
+        width: 60%;
+    }
+    div.col-4 {
+        float: left;
+        width: 80%;
+    }
+    div.col-5 {
+        float: left;
+        width: 100%;
+    }
     table {
         border-collapse: collapse;
         width: 100%;
@@ -90,12 +110,53 @@
         border-collapse: collapse;
     }
     .prop {
+        float: left;
+        margin-bottom: 0px;
         background-color: red;
         color: white;
         width: 70%;
         border-collapse: collapse;
         margin-left: 15px;
         border-radius: 5px 5px 0px 0px;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .arrow {
+        
+        font-weight: bold;
+        
+
+    }
+    .number {
+        float: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-left: 2px solid grey;
+        border-right: 2px solid grey;
+        color:red;
+        font-weight: bold;
+        /* border:4px solid black */
+        width: 70%;
+        font-size: 50px;
+        height: 60px;
+        border-collapse: collapse;
+        margin-left: 15px;
+        /* border-radius: 5px 5px 0px 0px; */
+    }
+    .drop {
+        float: left;
+        background-color:grey;
+        margin-top: 0px;
+        width: 70%;
+        padding: 0px;
+        margin-left: 15px;
+        border-collapse: collapse;
+        color:white;
+        border-radius: 0px 0px 5px 5px;
+        text-transform: uppercase;
+        font-size: 12px;
+
+
     }
 </style>
 </head>
@@ -127,9 +188,11 @@
                 <table>
                     <td class="data">
                         <table>
-                            <p class="prop">prop it</p>
+                            <p class="prop col-4">prop it
+                                <a class="arrow col-1">&#xf102</a>
+                            </p>
                             <p class="number">11</p>
-                            <p class="drop">drop it</p>
+                            <p class="drop">drop it &#8811</p>
                         </table>
                     </td>
                     <td>
