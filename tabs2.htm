@@ -4,78 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Styling with float</title>
     <style>
-         * {
+         *  {
                 box-sizing: border-box;
             }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
             body {
-                width:100%;
-                margin: 5px 30px 50px 30px;
+                margin: 0px;
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+            
+            .col-1 {
+                float: left;
+                width: 10%;
+            }
+            .col-2 {
+                float: left;
+                width: 20%;
+            }
+            .col-3 {
+                float: left;
+                width: 30%;
+            }
+            .col-4 {
+                float: left;
+                width: 40%;
+            }
+            .col-5 {
+                float: left;
+                width: 50%; 
+            }
+            .col-6 {
+                float: left;
+                width: 60%; 
+            }
+            .col-7 {
+                float: left;
+                width: 70%; 
+            }
+            .col-8 {
+                float: left;
+                width: 80%; 
+            }
+            .col-9 {
+                float: left;
+                width: 90%; 
+            }
+            .col-10 {
+                float: left;
+                width: 100%; 
             }
             .logo {
+                float: left;
                 text-align: center;
                 text-transform: uppercase;
                 font-size: 30px;
                 color:dimgrey;
                 font-family: "Times New Roman", Times, serif;
             }
-            .table2 {
-                margin: auto;
-                padding: 20px;
-                border-collapse: collapse;
-                width: 75%;
+
+            .tablecell1 {
+                height: 25px;
+                padding-top: 3px;
+                float: left;
+                padding-left: 15px;
+                /* border: 1px solid black; */
                 background-color: blue;
                 color: white;
                 font-weight: bold;
-                font-size: 20px;
-            }
-            .tablecell1 {
-                padding-left: 20px;
-                width: 20%;
             } 
             .tablecell2 {
+                height: 25px;
+                padding-top: 3px;
+                float: left;
                 text-align:center;
                 text-transform: uppercase;
-                width: 60%;
-            }
-            .tablecell3 {
-                text-align: right;
-                padding-right: 20px;
-                width: 20%;
-            }
-            .nav {
-                padding: 10px;
-                text-align: center;
-                text-transform: uppercase;
-                font-size: 50px;
-                color:dimgrey;
-                font-family: "Lucida Console", "Courier New", monospace; sans-serif;
+                /* border: 1px solid black; */
+                background-color: blue;
+                color: white;
                 font-weight: bold;
             }
-            .table1 {
-                border-collapse: collapse;
-                width: 95%;
-                margin-left: 100px;
+            .tablecell3 {
+                height: 25px;
+                padding-top: 3px;
+                float: left;
+                text-align: right;
+                padding-right: 40px;
+                /* border: 1px solid black; */
+                background-color: blue;
+                color: white;
+                font-weight: bold;
+                
             }
+            .nav {
+                float: left;
+                padding: 12px;
+                padding-left: 30px;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 43px;
+                color:dimgrey;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
             .td1 {
                 float: left;
-                width: 26%;
+                
+            }
+            .cellfoto {
+                float: left;
+                width: 40%;
+
             } 
             .foto {
-                margin-left: 100px;
-                width: 300px;
-                height: 220px;
+                padding-top: 15px;
+                padding-left: 0%;
+                padding-right: 4%;
+                margin-bottom: 20px;  
             }
             .coupon {
-                margin-left: 135px;
-                width: 300px;
-                height: 220px;
+                
+                width: 94%;
+                height: 180px;
+                padding-right: 5%;
                 border: 5px dashed grey;
                 color: red;
                 text-align: center;
                 font-size: 30px;
-                padding: 10px;
+                
             }
             .antras {
                 float: left;
@@ -98,60 +162,45 @@
                 text-align: center;
             }
             .copy {
-                margin-left: 200px;
-                color:grey;
-                display: block;
+                float: left;
                 width: 100%;
+                color:grey;
+                font-size: 12px;
+                border: 1px solid black;
             }
     </style>
 </head>
 <body>
-    <table>
-        <div class="logo">
+    <div>
+        <div class="logo col-10">
             <h1>The daily news</h1>
         </div>
-        <tr class="header">
-            <table class="table2">
-                <td class="tablecell1">Schoolname.com</td>
-                <td class="tablecell2">The school's best news</td>
-                <td class="tablecell3">$ 1.00</td>
-            </table> 
-        </tr>
-        <div class="nav">
+        <div class="table header">
+            <div class="tablecell1 col-3">Schoolname.com</div>
+            <div class="tablecell2 col-4">The school's best news</div>
+            <div class="tablecell3 col-3">$ 1.00</div>
+        </div>
+        <div class="nav col-10">
             Your headline goes here
         </div>
-        <tr class="main">
-            <table class="table1">
-                <td class="td1">
-                    <table class="lentele">
-                        <tr class="pirmas">
-                            <ol><img src="img1/black-head.jpg" class="foto" alt="Black human head"></ol>
-                            <ol class="coupon">- Coupon -</ol>
-                        <tr>
-                    </table>  
-                </td>
-                <td class="antras">
-                   <p class="name">Lorem ipsum loremp</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                </td>
-                <td class="trecias">
-                    <p class="name">Lorem ipsum loremp</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
-                   <p class="your-name">By: your name</p>
-                </td>
-            </table>
-        </tr>     
-        </div>
-       
-    </table>
+            <div class="main">
+                    <div class="cellfoto">
+                        <div><img src="./img1/black-head2.PNG" class="foto col-10" alt="Black human head"></div>
+                        <div class="coupon col-10">Coupon</div>
+                    </div>
+                    <div class="antras col-3">
+                        <p class="name">Lorem ipsum loremp</p>
+                        <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                        <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                    </div>
+                    <div class="trecias col-3">
+                        <p class="name">Lorem ipsum loremp</p>
+                        <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                        <p>Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yeaBlah blah blah yea yea yea yea yeaBlah blah blah yea yea yea Blah blah blah yea yea yea Blah blah blah yea yea yea</p>
+                        <p class="your-name">By: your name</p>
+                    </div>
+                </div>     
+            </div>
     <footer class="copy"> Copyright &reg 2021 AB</footer>
 </body>
 </html>
