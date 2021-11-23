@@ -45,6 +45,31 @@
             .col-10 {
                 width: 100%;
         }
+        .header1 {
+            float: left;
+            font-family:'Times New Roman', Times, serif;
+            padding-left: 35px;
+            font-size: 2.4rem;
+            color:grey;
+        }
+        .header2 {
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+            font-size: 0.8rem;
+            padding-left: 30px;
+            padding-top: 35px;
+        }
+        .b {
+            font-weight: bold;
+        }
+        nav {
+            width: 100%;
+            float: left;
+            padding-left: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
         }
 
         
@@ -83,42 +108,25 @@
             .col-mob-10 {
                 width: 100%;
         }
-            .header1 {
-                float: left;
-                font-family:'Times New Roman', Times, serif;
-                padding-left: 35px;
-                font-size: 2.4rem;
-                color:grey;
-        }
-            .header2 {
-                float: left;
-                font-family: Arial, Helvetica, sans-serif;
-                color: grey;
-                font-size: 0.8rem;
-                padding-left: 30px;
-        }
-        }
-
-        body {
-            margin: 2.5rem 0rem 0rem 0rem;
-            border-collapse: collapse;
-        }
-        header {
-            width: 100%;
-        }
+            
         .header1 {
             float: left;
+            width: 95%;
             font-family:'Times New Roman', Times, serif;
-            padding-left: 35px;
-            font-size: 2.4rem;
+            padding-left: 25px;
+            font-size: 1.5rem;
             color:grey;
+            background-color: khaki;
         }
         .header2 {
             float: left;
+            width: 70%;
+            height: 100px;
             font-family: Arial, Helvetica, sans-serif;
             color: grey;
             font-size: 0.8rem;
-            padding-left: 30px;
+            margin-left: 30%;
+            background-color: lawngreen;
         }
         .b {
             font-weight: bold;
@@ -130,16 +138,25 @@
             padding-top: 50px;
             padding-bottom: 50px;
         }
+        }
+
+        body {
+            margin: 2.5rem 0rem 0rem 0rem;
+            border-collapse: collapse;
+        }
+        header {
+            width: 100%;
+        }
+        
         .foto1 {
             border: 1px solid #ddd;
             border-radius: 4px;
-            padding: 5px;
-            
+            padding: 5px;  
         }
         .foto2 {
             border: 1px solid #ddd;
             border-radius: 4px;
-            padding: 5px;   
+            padding: 5px;    
         }
         .foto3 {
             border: 1px solid #ddd;
@@ -157,28 +174,22 @@
             padding: 5px;   
         }
         .erik {
-            /* float:inline-end; */
-            /* background-color: lightseagreen; */
             text-align: center;
             padding-left: 10px;
         }
         .about-e {
-            /* background-color: limegreen; */
             float: left;
-            padding-right: 30px;
+            /* padding-right: 30px; */
         }
         .mike {
-            /* background-color: lightseagreen; */
             text-align: center; 
             padding-left: 10px;
         }
         .about-m {
-            /* background-color: limegreen; */
             float: left;
             padding-right: 30px;
         }
         .kristin {
-            /* background-color: lightseagreen; */
             text-align: center;
         }
         .about-k {
@@ -186,7 +197,7 @@
             padding-right: 30px;
         }
         .miranda {
-            /* background-color: lightseagreen; */
+            
             text-align: center;
         }
         .about-mi {
@@ -194,11 +205,9 @@
             padding-right: 30px;
         }
         .jesse {
-            /* background-color: lightseagreen; */
             text-align: center;
         }
         .about-j {
-            /* background-color: limegreen; */
             float: left;
             padding-right: 30px;     
         }
@@ -218,23 +227,24 @@
             float: left;
             width: 100%;
             font-size: 0.85rem;
-            color: grey;   
+            color: grey;  
+            padding-top: 10px; 
         }
 
     </style>
 <body>
     <header class="col-10">
         <div class="header1 col-6">
-            We do everything with our core values of <span class="b">honesty</span>, hard <span class="b">work</span>, and <span class="b">trust.</span>
+            <p>We do everything with our core values of <span class="b">honesty</span>, hard <span class="b">work</span>, and <span class="b">trust.</span></p>
         </div>
         <div class="header2 col-3 col-mob-5">
-            <span class="b">We believe these characteristics</span> should influence everything we do in business and in live. We sincerely enjoy the work we do, and o clients get to reap the benefits.  
+            <p><span class="b">We believe these characteristics</span> should influence everything we do in business and in live. We sincerely enjoy the work we do, and o clients get to reap the benefits.</p> 
         </div>
     </header>
     <nav>
         <div class="about-e col-2">
             <img src="./img11-22/photo1.PNG" class="foto1 col-10 col-mob-4" alt="Erik">
-            <p class="erik col-10 col-mob-4"><span class="row1">erik downs</span> <span class="row2">creative director</span> <span class="row3">eric@grainandmortar.com</span></p>
+            <p class="erik col-10 col-mob-1"><span class="row1">erik downs</span> <span class="row2">creative director</span> <span class="row3">eric@grainandmortar.com</span></p>
         </div>
         <div class="about-m col-2">
             <img src="./img11-22/photo2.PNG" class="foto2 col-10 col-mob-4" alt="Mike">
