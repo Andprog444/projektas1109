@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+        @media screen and (max-width:600px) {}
+
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: hobbies; }
+        .grid-container {
+            display: grid;
+            grid: 
+            'header header header menu menu menu'
+            'hobbies hobbies hobbies hobbies hobbies hobbies';
+            gap: 5px;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            padding: 20px 0px;
+            font-size: 30px;
+            border: 1px solid black;
+        }
+
+    </style>
+    </head>
+  <body>
+
+   <div class="grid-container">
+       <div class="item1">Header</div>
+       <div class="item2">Foto</div>
+       <div class="item3">main</div>
+       
+       
+   </div>
+   
+       
+   </body>
+</html>

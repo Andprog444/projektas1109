@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design</title>
+    <style>
+
+        /* COMMON */
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            border-collapse: collapse;
+        }
+        header:after, main:after, footer:after {
+            content: "";
+            clear: both;
+            display: table;
+        }    
+
+        /* HEADER */
+        header {
+            /* border-bottom: 2px solid lightgrey; */
+        }
+        .text1 {
+            padding-left: 10px;
+            font-weight: bold;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            letter-spacing: -2.5px;
+            margin-bottom: 0px;
+        }    
+        .text2 {
+            padding-left: 10px;
+            color:lightgrey ;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: -1px;
+            text-transform: capitalize;   
+        }   
+        .text3 {
+            padding-left: 10px;
+            color:rgb(184, 176, 176) ;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: -1px;  
+        }
+        .foto {
+            /* background-color: lightseagreen; */
+            float: left;
+            width: 50%;
+        }
+        /* MAIN */
+            .foto1 {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 9px;
+        }
+        
+
+        /* For MOBILE */
+        @media screen and (max-width:600px) {
+            body {
+                /* background-color: mediumseagreen; */
+            }
+            .text {
+                /* background-color: lightpink; */
+                float: left;
+                width: 50%;
+            }
+            .me {
+                width: 100%;
+                padding-left: 10px;
+                padding-top: 50px;
+            }
+            .text1 { 
+                font-size: 1.8rem;
+            }    
+            .text2 {
+                font-size: 1rem;
+            }   
+            .text3 {
+                font-size: 0.625rem;  
+            }
+            .content {
+            padding-left: 70px;
+            }
+            .foto1 {
+            width: 35%;
+        } 
+           
+
+    }
+        /* For DESKTOP */
+        @media screen and (min-width:600px) {
+            .text {
+                float: left;
+                padding-left: 120px;
+                width: 50%;
+            }
+            .text1 {
+                font-size: 2.6rem;
+            }    
+            .text2 {
+                font-size: 1.25rem;     
+            }   
+            .text3 {
+                font-size: 0.625rem;
+            } 
+            .me {
+                width: 70%;
+                /* padding-left: 0px; */
+                padding-top: 50px;
+                border-bottom: 2px solid lightgrey;
+            }
+            .content {
+            padding-left: 120px;
+            }
+            .foto1 {
+            width: 11%;
+        }     
+    }
+    </style>
+    
+</head>
+<body>
+    <header class="clearfix">
+        <div class="text">
+            <p class="text1">about me</p>
+            <p class="text2">i'm a uI designer and front end developer from sydney, austaralia.</p>
+            <p class="text3">I enjoy taking complex problems and turning them into simple and beautiful interface designs. I also love the logic and structure of coding and always strive to write elegant and efficient code, whether it be HTML, CSS or jQuery.</p>
+            <p class="text3">When i'm not coding or pushing pixels, you'll find me in the gym or on court shooting some hoops</p>
+        </div>   
+        <div class="foto">
+            <img src="./img11-22/photo-men.PNG" class="me" alt="men">
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <img src="./img11-22/subject1.PNG" class="foto1" alt="">
+            <img src="./img11-22/subject2.PNG" class="foto1" alt="">
+            <img src="./img11-22/subject3.PNG" class="foto1" alt="">
+            <img src="./img11-22/subject4.PNG" class="foto1" alt="">
+            <img src="./img11-22/subject5.PNG" class="foto1" alt="">
+            <img src="./img11-22/subject6.PNG" class="foto1" alt="">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
