@@ -15,10 +15,21 @@
             display: table;
             clear: both;
         }
+        body {
+            margin: 2.5rem 0rem 0rem 0rem;
+            border-collapse: collapse;
+            background-image: url("./img11-22/cell.gif");
+        }
+        header {
+            width: 100%;
+            /* background-color: bisque; */
+            align-items: center;
+        }
+
                 /* For desktop  */
         @media only screen and (min-width: 600px) {
 
-            .col-1 {
+            /* .col-1 {
                 width: 10%;
         }
             .col-2 {
@@ -47,30 +58,26 @@
         }
             .col-10 {
                 width: 100%;
-        }
-        body {
-            margin: 2.5rem 0rem 0rem 0rem;
-            border-collapse: collapse;
-            background-image: url("./img11-22/cell.gif");
-        }
-        header {
-            width: 100%;
-            /* background-color: bisque; */
-        }
+        } */
+        
         .header1 {
             float: left;
             font-family:'Times New Roman', Times, serif;
-            margin-right: 45px;
+            margin-right: 50px;
+            width: 45%;
             font-size: 2.4rem;
             color:grey;
-            text-align: right;
+            padding-left: 60px;
+            /* text-align: right; */
             /* background-color: blueviolet; */
         }
         .header2 {
             float: left;
+            margin-left: 50px;
+            width: 39%;
             font-family: Arial, Helvetica, sans-serif;
             color: grey;
-            font-size: 0.8rem;
+            font-size: 1rem;
             /* padding-left: 30px; */
             padding-top: 35px;
         }
@@ -78,17 +85,79 @@
             font-weight: bold;
         }
         main {
+            
             width: 100%;
             float: left;
-            padding-left: 30px;
-            padding-top: 50px;
+            padding-left: 20px;
+            padding-top: 70px;
             padding-bottom: 50px;
+            /* background-color: magenta; */
         }
+        .foto1 {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            margin-left: 30px;
+            width: 60%;
+            /* background-color: mediumpurple; */
+           
+        }
+        .foto1 img {
+            width: 110%;
+            display: block;
+            
+        }
+        .members {
+            /* background-color: mediumseagreen; */
+            text-align: center;
+            width: 60%;
+            margin-left: 35px;
+        }
+        .members p {
+            margin: 0px;
+            
+        }
+        .about {
+            float: left;
+            /* background-color:moccasin ; */
+            width: 20%;
+            /* padding: 0px; */
+        }    
+        .row1 {
+            float: left;
+            font-size: 0.8rem;
+            width: 100%;
+            text-transform: uppercase;
+            color: grey;   
+        }
+        .row2 {
+            float: left;
+            font-size: 0.8rem;
+            width: 100%;
+            font-weight: 600;
+            text-transform: capitalize;
+            /* background-color: aquamarine; */
+        }
+        .row3 {
+            float: left;
+            width: 100%;
+            font-size: 0.7rem;
+            color: grey;
+            padding: 5px;
+        }
+        .row3 a:link, .row3 a:visited {
+            color: gray;
+            text-decoration: none;
+        }
+        .row3 a:hover, .row3 a:active {
+            color: black;
+        }  
+        
     }
-
+            /* FOR MOBILE */
     @media only screen and (max-width: 600px) {
 
-        .col-1 {
+        /* .col-1 {
             width: 10%;
         }
         .col-2 {
@@ -117,59 +186,61 @@
         }
         .col-10 {
             width: 100%;
-        }
-        body {
-            margin: 2.5rem 0rem 0rem 0rem;
-            border-collapse: collapse;
-            background-image: url("./img11-22/cell.gif");
-        }
-        header {
-            width: 100%;
-            /* background-color: bisque; */
-        }
+        } */
+       
         .header1 {
             float: left;
+            width: 50%;
             font-family:'Times New Roman', Times, serif;
-            margin-right: 45px;
-            font-size: 2.4rem;
+            margin-right: 35px;
+            font-size: 1.4rem;
+            /* text-align: left; */
             color:grey;
-            text-align: right;
+            /* text-align: justify; */
+            padding-left: 20px;
             /* background-color: blueviolet; */
         }
         .header2 {
             float: left;
+            width: 38%;
             font-family: Arial, Helvetica, sans-serif;
             color: grey;
             font-size: 0.8rem;
             /* padding-left: 30px; */
-            padding-top: 35px;
+            padding-top: 15px;
         }
         .b {
             font-weight: bold;
         }
         main {
+            
             width: 100%;
             float: left;
-            padding-left: 30px;
+            padding-left: 25px;
             padding-top: 50px;
             padding-bottom: 50px;
+            /* background-color: magenta; */
         }
-    }
-
-
         .foto1 {
             border: 1px solid #ddd;
             border-radius: 4px;
             padding: 5px;
+            margin-left: 30px;
+            width: 60%;
+            /* background-color: mediumpurple; */
            
         }
-        .foto img {
+        .foto1 img {
+            width: 100%;
             display: block;
-            margin: auto;
+            /* margin: auto; */
+            
         }
         .members {
+            /* background-color: mediumseagreen; */
             text-align: center;
-            width: 100%;
+            width: 90%;
+            
         }
         .members p {
             margin: 0px;
@@ -177,15 +248,19 @@
         }
         .about {
             float: left;
+            /* background-color:moccasin ; */
+            width: 45%;
         }    
         .row1 {
             float: left;
+            font-size: 0.8rem;
             width: 100%;
             text-transform: uppercase;
             color: grey;   
         }
         .row2 {
             float: left;
+            font-size: 0.8rem;
             width: 100%;
             font-weight: 600;
             text-transform: capitalize;
@@ -194,10 +269,18 @@
         .row3 {
             float: left;
             width: 100%;
-            font-size: 0.85rem;
-            color: grey;  
-            padding-top: 10px; 
+            font-size: 0.7rem;
+            color: grey;
+        }
+        .row3 a:link, .row3 a:visited {
+            color: gray;
+            text-decoration: none;
+        }
+        .row3 a:hover, .row3 a:active {
+            color: black;
         }  
+    }
+
     </style>
 <body>
     <header class="col-10 clearfix">
@@ -213,10 +296,10 @@
             <div class="foto1">
                 <img src="./img11-22/photo1.PNG" class="col-10" alt="Erik">
             </div>
-            <div class="members clearfix">
+            <div class="members">
                 <p class="row1">erik downs</p>
                 <p class="row2">creative director</p>
-                <p class="row3"><a href="eric@grainandmortar.com"></a>eric@grainandmortar.com</p>
+                <p class="row3"><a href="#">eric@grainandmortar.com</a></p>
             </div>
         </div>
         <div class="about col-2">
@@ -226,7 +309,7 @@
             <div class="members clearfix">
                 <p class="row1">mike dekay</p>
                 <p class="row2">creative director</p>
-                <p class="row3"><a href="mike@grainandmortar.com"></a> mike@grainandmortar.com</p>
+                <p class="row3"><a href="#">mike@grainandmortar.com</a></p>
             </div>
         </div>
         <div class="about col-2">
@@ -236,7 +319,7 @@
             <div class="members clearfix">
                 <p class="row1">kristin dekay</p>
                 <p class="row2">operations director</p>
-                <p class="row3">kristin@grainandmortar.com</p>
+                <p class="row3"><a href="#">kristin@grainandmortar.com</a></p>
             </div>
         </div>
         <div class="about col-2">
@@ -246,7 +329,7 @@
             <div class="members clearfix">
                 <p class="row1">miranda bouck</p>
                 <p class="row2">designer</p>
-                <p class="row3">miranda@grainandmortar.com</p>
+                <p class="row3"><a href="#">miranda@grainandmortar.com</a></p>
             </div>
         </div>
         <div class="about col-2">
@@ -256,7 +339,7 @@
             <div class="members clearfix">
                 <p class="row1">jesse harding</p>
                 <p class="row2">designer</p>
-                <p class="row3">jesse@grainandmortar.com</p>
+                <p class="row3"><a href="#">jesse@grainandmortar.com</a></p>
             </div>
         </div>
     </main>
