@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design</title>
+    <style>
+
+        /* COMMON */
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            border-collapse: collapse;
+        }
+        .foto p:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        header {
+            background-color: burlywood;
+            width: 60%;
+            float: left;
+        }
+        main {
+            /* background-color:chocolate; */
+            width: 60%;
+            float: left;
+        }
+        .foto {
+            width: 100%;
+            background-color: darkgreen;
+            /* display: block; */
+        }
+        .foto img {
+            float: left;
+            width: 20%;
+
+        }
+        .foto p {
+            /* float: left; */
+            width: 100%;
+            background-color: darkkhaki;
+        }
+        nav {
+            background-color:darkgoldenrod;
+            width: 40%;
+            display: inline-block;
+        }
+
+
+        /* For MOBILE */
+        @media screen and (max-width:600px) {
+           
+           
+
+    }
+        /* For DESKTOP */
+        @media screen and (min-width:600px) {
+            
+    }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>meet the <span class="big-letter">hbcw</span>eb team</h1>
+        <p><span>hbcw</span>eb is comprised of ultra-talented and expierenced designers, developers and programers. Learn more about each person by reading their description below: (yes it's currently all cludes...)</p>
+    </header>
+    <main>
+        <div class="foto">
+            <img src="./img11-22/item1.PNG" alt="1">
+            <p class="text">Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia </p>
+        </div>
+        <div class="foto">
+            <img src="./img11-22/item2.PNG" alt="2">
+            <p>Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia</p>
+        </div>
+        <div class="foto">
+            <img src="./img11-22/item3.PNG" alt="3">
+            <p>Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia</p>
+        </div>
+        <div class="foto">
+            <img src="./img11-22/item4.PNG" alt="4">
+            <p>Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia Tra lia lia lia lia lia lia lialia</p>
+        </div>
+    </main>
+    <nav>
+        <div>menu</div>
+        <div>menu</div>
+        <div>menu</div>
+        <div>menu</div>
+        <div>menu</div>
+        <div>menu</div>
+    </nav>
+    
+</body>
+</html>
