@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-            
+        .class-s{
+            font-size: 2rem;
+            text-transform: capitalize;
+        }       
+
     
     </style>
     <script>
@@ -15,9 +19,64 @@
     </script>
 </head>
 <body>
-    
+    <div id="xy" ></div>
+    <!-- <div id="my-div">Old text</div> -->
     
     <script>
+        //kurimas div scripte
+        // document.write('Welcome');
+        // document.createElement("div");
+        // // console.log(document.createElement("div"))
+        // let myDiv = document.write('Welcome') + document.createElement("div");
+
+        //Stilius scripte ir Style skiltyse
+
+        let xBody = document.getElementById("xy");
+        xBody.innerHTML = "tratata";
+        xBody.className = "class-s";
+        xBody.style.color = "green";
+        xBody.style.border = "1px solid black";
+        xBody.style.backgroundColor = "lightgrey";
+
+        let y = document.createElement(p)
+        
+
+    
+        
+        
+
+
+        
+
+
+        // const la = document.createElement('div');
+        // const va = document.createTextNode('Welcome');
+        // la.appendChild(va);
+
+        // const element = document.getElementById('div1');
+    
+
+
+
+
+        // let myDiv = document.getElementById('my-div');
+        // // console.log(myDiv.innerHTML);
+        // myDiv.innerHTML = '<div id="another-div">New text</div>';
+        // let anotherDiv = document.getElementById('another-div');
+        // anotherDiv.innerHTML = '<p style="color: red;">Hello</p>';
+
+        // let temp = myDiv.innerHTML;
+        // let myX = '';
+        // myX += '<div style = "border: 1px solid black; padding: 10px">' + temp + '</div>';
+        // myDiv.innerHTML = myX;
+        // console.log(myX);
+
+    
+        // console.log(myDiv.innerHTML);
+
+
+
+
         //Rasti teigiamas ar neigiamas skaicius
         //input
         // let n = -10;
@@ -132,11 +191,163 @@
         //     console.log ("Kambari tvarkys vyresenelis")
 
         //Devintas
-        let p1 = 5, p2 = 8, p3 = 9;
+        // let p1 = 5, p2 = 8, p3 = 9;
+        // //Algorithm
+        // if( p1 > p2 && p1 > p3 ){
+        //     console.log("Pirmas gavo geriausia pazymi")
+        // } else if( p2 > p1 && p2 > p3 ){
+        //     console.log("Antras gavo geriausia pazymi")
+        // } else if( p3 > p1 && p3 > p2 ){
+        //     console.log("Trecias gavo geriausia pazymi")
+        // }
 
-        if( p3 > p2 || p3 > p1 ){
-            console.log("Trecias gavo geriausia pazymi")
-        }
+        
+        // //Desimtas
+        // //input
+        // let n = 5;
+        // if( n == 1 || n == 3 || n == 5 || n == 7 || n == 8 || n == 10 || n == 12){
+        //     console.log("31")
+        // } else if ( n == 4 || n == 6 || n == 9 || n == 11 ){
+        //     console.log("30")
+        // } else {
+        //     console.log("28")
+        // }
+
+        // //11-tas
+        // //input
+        // let v1 = 8; //laikrodis rodo valandas
+        // let m1 = 29; //laikrodis rodo minutes
+        // let m2 = 23; //Petro kelione i mokykla
+        // let v = 9; // Pamokos pradzios valanda
+        // let m = 5; // Pamokos pradzios minutes
+        
+        // if(( v1*60 + m1 + m2 ) <=  (v*60 + m)){
+        //     console.log("Petras nepaveluos i pamoka")
+        // } else{
+        //     console.log("Petras paveluos i pamoka")
+        // }
+
+        //12-tas
+        //input
+        // let n = 4; // degtukai
+        
+        // if ( n % 3 == 0 ){
+        //     console.log("Trikampi sudeti galima")
+        // } else {
+        //     console.log("Trikampio sudeti negalima")
+        // }
+
+        //13-tas
+        //input
+        // let m = 2028; //metai
+        // let n = (( m - 1896 )/4) + 1; //kelintos olimpines
+       
+        // if(( m - 1896 ) % 4 == 0 ){
+        //     console.log("n = " + n)
+        // }else{
+        //     console.log("Metai neolimpiniai")
+        // }
+       
+       1.
+
+        // for(let i = 1; i <= 5; i++){
+        //     console.log("Labas");
+        // }
+
+        2. 
+        
+        // let i = 0;
+        // while (i <= 4) { 
+        // console.log( i );
+        // i++;
+        // }
+
+        // for(let i = 0; i <= 4; i++) {
+        //     console.log( i )
+        // }
+
+        3. 
+        
+        // for(let i = 0; i < 50; i+=10){ //i= i + 10
+        //     console.log( i )
+        // }
+
+        4.
+
+        // for(let i = 49; i <= 53; i++){
+        //     console.log( i )
+        // }
+
+        5.
+        
+        // for(let i = 4; i >= 0; i--){
+        //     console.log( i )
+        // }
+
+        6.
+
+        // for(let i = 0; i < 5; i++){
+        //     console.log(Math.floor(Math.random()*(10+1)))
+        // }
+
+        7.
+
+        // let i;
+        // while (i != 5){
+        //     i = (Math.floor(Math.random()*11))
+        //     console.log(i)
+        // }
+
+        8. 
+
+        // let i = 0;
+        // while ( i <= 100 ){
+        //    let f = (Math.floor(Math.random()*11))
+        //    console.log(f)
+        //    i += f;
+        // }
+
+        9.
+
+        // let i , f ;
+        // while (i !== 5 && i !== 7){
+        //     i = Math.floor(Math.random()*11)
+        //     console.log(i)
+        //     f++;
+        // }
+        // console.log("Ivyko ciklu" +  i ) 
+
+        10.
+
+        // let x = 2.54;
+        // for ( let n = 1; n < 20; n++){ // n - coliai, 
+        //     let y = n * x; // 1 * 2.54
+        //     console.log(n + " colis yra " + y + "cm") 
+        // }
+        // for (let n = 1; n < 20; n++){
+        //     let y = n / x;
+        //     console.log(n + " cm yra " + y + " col")
+        // } 
+
+
+
+
+        // let myDiv = document.getElementById('my-div');
+        // // console.log(myDiv.innerHTML);
+        // myDiv.innerHTML = '<div id="another-div">New text</div>';
+        // let anotherDiv = document.getElementById('another-div');
+        // anotherDiv.innerHTML = '<p style="color: red;">Hello</p>';
+
+        // let temp = myDiv.innerHTML;
+        // let myX = '';
+        // myX += '<div style = "border: 1px solid black; padding: 10px">' + temp + '</div>';
+        // myDiv.innerHTML = myX;
+        // console.log(myX);
+
+    
+        // console.log(myDiv.innerHTML);
+
+
 
         
 
@@ -144,37 +355,10 @@
 
 
 
+       
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // //Desimtas
-        // //input
-        // let n = 5;
-        // if( n == 1, ){
-        //     console.log("31")
-        // } 
-        // else if ( n == ){
-        //     console.log("30")
-        // }
-        // else if ( n == 2 ){
-        //     console.log("28")
-
-        // }
+        
+        
 
 
 
