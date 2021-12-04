@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let e = document.createElement('div');
+        e.innerHTML = '<div id="header">Welcome</div>';
+        document.body.appendChild(e);
+        let newDiv = document.getElementById('header');
+        newDiv.innerHTML = '<h1 style = "color: green">Sveiki, atvyke!</h1>';
+        let main = document.createElement('p');
+        main.innerHTML = '<p style="color: blue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum.</p>';
+        document.body.appendChild(main);
+       
+
+        let myX = document.createElement('div');
+        myX.innerHTML = '<div style = "border: 2px solid grey; padding: 15px;">' + main.innerHTML +'</div>';
+        document.body.appendChild(myX);
+
+        let up = document.createElement('a')
+        up.innerHTML = '<p><a href = "#">Up</a></p>'
+        document.body.appendChild(up);
+
+
+    </script>
+    
+</body>
+</html>
