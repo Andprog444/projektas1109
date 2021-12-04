@@ -7,24 +7,78 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <!-- <div id="t1">Hy1</div>
+    <div id="t2">Hy2</div>
+    <div id="t3">Hy3</div> -->
+    <button id="button1" onclick="myFunction()">Hide</button>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    
     <script>
-        let e = document.createElement('div');
-        e.innerHTML = '<div id="header">Welcome</div>';
-        document.body.appendChild(e);
-        let newDiv = document.getElementById('header');
-        newDiv.innerHTML = '<h1 style = "color: green">Sveiki, atvyke!</h1>';
-        let main = document.createElement('p');
-        main.innerHTML = '<p style="color: blue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum.</p>';
-        document.body.appendChild(main);
+
+        function myFunction() {
+        document.getElementById("button1").innerHTML = "SIDE";
+        document.getElementById("demo1").innerHTML = "Menu1";
+        document.getElementById("demo2").innerHTML = "Menu2";
+        document.getElementById("demo3").innerHTML = "Menu3";
+        document.getElementById("demo4").innerHTML = "Menu4";
+        document.getElementById("demo5").innerHTML = "Menu5";
+        document.getElementById("demo6").innerHTML = "Menu6";
+
+        }
+
+        function fnc() {
+            return Hide 
+        }
+        // document.getElementById("button1").innerHTML = fnc(Hide);
+
+
+        // myFunction();
+
+        //Funkcija
+        // function doit(x,y,clr){
+        //     elm = document.getElementById(x)
+        //     elm.innerHTML = y;
+        //     elm.style.color = clr;
+        // }
+        // function getStyle(){
+        //     document.getElementById(x).style.property = value;
+
+        // }
+        // doit("t1", "Menu1", "green");
+        // doit("t2", "Menu2", "grey");
+        // doit("t3", "Menu3", "blue");
+
+
+
+
+
+
+
+
+        // let e = document.createElement('div');
+        // e.innerHTML = '<div id="header">Welcome</div>';
+        // document.body.appendChild(e);
+        // let newDiv = document.getElementById('header');
+        // newDiv.innerHTML = '<h1 style = "color: green">Sveiki, atvyke!</h1>';
+        // let main = document.createElement('p');
+        // main.innerHTML = '<p style="color: blue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum. Vestibulum placerat finibus sapien, ac pellentesque libero facilisis sed. In pellentesque sapien sed risus blandit, at ullamcorper magna consectetur. In accumsan mi sit amet arcu vehicula tincidunt. Suspendisse in nibh at arcu condimentum condimentum vitae scelerisque tortor. Nullam at tincidunt nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempor ac augue eget imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut libero id augue interdum gravida. Proin et cursus ipsum.</p>';
+        // document.body.appendChild(main);
        
 
-        let myX = document.createElement('div');
-        myX.innerHTML = '<div style = "border: 2px solid grey; padding: 15px;">' + main.innerHTML +'</div>';
-        document.body.appendChild(myX);
+        // let myX = document.createElement('div');
+        // myX.innerHTML = '<div style = "border: 2px solid grey; padding: 15px;">' + main.innerHTML +'</div>';
+        // document.body.appendChild(myX);
 
-        let up = document.createElement('a')
-        up.innerHTML = '<p><a href = "#">Up</a></p>'
-        document.body.appendChild(up);
+        // let up = document.createElement('a')
+        // up.innerHTML = '<p><a href = "#">Up</a></p>'
+        // document.body.appendChild(up);
 
 
     </script>
