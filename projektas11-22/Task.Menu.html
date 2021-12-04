@@ -5,32 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        p{
+
+            margin: 0rem;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    <button id="button1" onclick="myFunction()">Hide</button>
-
-    <p id="demo1"></p>
-    <p id="demo2"></p>
-    <p id="demo3"></p>
-    <p id="demo4"></p>
-    <p id="demo5"></p>
-    <p id="demo6"></p>
+    <button id="button1" onclick="myFunction()">Show</button>
+    <div class="link">
+        <a href="#"><p id="demo0"></p></a>
+        <a href="#"><p id="demo1"></p></a>
+        <a href="#"><p id="demo2"></p></a>
+        <a href="#"><p id="demo3"></p></a>
+        <a href="#"><p id="demo4"></p></a>
+        <a href="#"><p id="demo5"></p></a>
+        <a href="#"><p id="demo6"></p></a>
+        <a href="#"><p id="demo7"></p></a>
+        <a href="#"><p id="demo8"></p></a>
+        <a href="#"><p id="demo9"></p></a>
+    </div>
 
     <script>
-        function myFunction() {
-        document.getElementById("button1").innerHTML = "SIDE";
-        document.getElementById("demo1").innerHTML = "Menu1";
-        document.getElementById("demo2").innerHTML = "Menu2";
-        document.getElementById("demo3").innerHTML = "Menu3";
-        document.getElementById("demo4").innerHTML = "Menu4";
-        document.getElementById("demo5").innerHTML = "Menu5";
-        document.getElementById("demo6").innerHTML = "Menu6";
-
+        function myFunction() {    
+        document.getElementById("button1").innerHTML = "Hide";
+        document.getElementById("demo0").innerHTML = "Menu 0";
+        document.getElementById("demo1").innerHTML = "Menu 1";
+        document.getElementById("demo2").innerHTML = "Menu 2";
+        document.getElementById("demo3").innerHTML = "Menu 3";
+        document.getElementById("demo4").innerHTML = "Menu 4";
+        document.getElementById("demo5").innerHTML = "Menu 5";
+        document.getElementById("demo6").innerHTML = "Menu 6";
+        document.getElementById("demo7").innerHTML = "Menu 7";
+        document.getElementById("demo8").innerHTML = "Menu 8";
+        document.getElementById("demo9").innerHTML = "Menu 9";
         }
 
-        function fnc() {
-            return Hide 
+        function changebutton(){
+            let x = document.getElementById("button1").innerHTML = "Show";
         }
+        
+
+        // function myFunction() {
+        //     return document.getElementById("button1").innerHTML = "Show";
+        // }
     </script>
 </body>
 </html>
